@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - MarketAI</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg">
+    <link rel="stylesheet" href="/css/auth.css?v=aC7V_26y84I1at4RiVryLZ-psXZDLheU52eTF7ieE_M">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body class="auth-body">
+    <div class="container-fluid p-0 vh-100">
+        <div class="row g-0 h-100">
+            <!-- Left Panel - Sign In Form -->
+            <div class="col-lg-6 d-flex align-items-center justify-content-center bg-light">
+                <div class="auth-form-container">
+                    <!-- Logo and Brand Section -->
+                    <div class="text-center mb-4">
+                        <div class="brand-logo mb-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <h1 class="brand-title">MarketAI</h1>
+                        <p class="brand-subtitle">AI-powered market intelligence platform</p>
+                    </div>
+
+                    <!-- Sign In Card -->
+                    <div class="auth-card">
+                        <div class="auth-card-header">
+                            <h2 class="auth-title">Welcome</h2>
+                            <p class="auth-subtitle">Sign in to access your market insights</p>
+                        </div>
+
+                        <div class="auth-card-body">
+                            
+                            <form method="post" action="/Auth/GoogleSignIn">
+                                <button type="submit" class="btn btn-google w-100">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                                        <path d="M18.1713 8.36788H17.5001V8.33329H10.0001V11.6666H14.7096C14.023 13.6069 12.1763 15 10.0001 15C7.23884 15 5.00009 12.7612 5.00009 9.99996C5.00009 7.23871 7.23884 4.99996 10.0001 4.99996C11.2746 4.99996 12.4338 5.48079 13.3171 6.26621L15.6746 3.90871C14.1859 2.52204 12.1951 1.66663 10.0001 1.66663C5.39801 1.66663 1.66676 5.39788 1.66676 9.99996C1.66676 14.602 5.39801 18.3333 10.0001 18.3333C14.6022 18.3333 18.3334 14.602 18.3334 9.99996C18.3334 9.44121 18.2759 8.89621 18.1713 8.36788Z" fill="#FFC107"></path>
+                                        <path d="M2.62744 6.12125L5.36536 8.12917C6.10619 6.29501 7.90036 5.00001 9.99994 5.00001C11.2744 5.00001 12.4336 5.48084 13.3169 6.26626L15.6744 3.90876C14.1857 2.52209 12.1949 1.66667 9.99994 1.66667C6.79911 1.66667 4.02327 3.47376 2.62744 6.12125Z" fill="#FF3D00"></path>
+                                        <path d="M10.0001 18.3333C12.1951 18.3333 14.1859 17.4779 15.6734 16.0904L13.1305 13.9508C12.2734 14.6458 11.1859 15.0016 10.0001 15C7.82301 15 5.97551 13.6058 5.28884 11.6641L2.58301 13.7358C3.96051 16.4137 6.76051 18.3333 10.0001 18.3333Z" fill="#4CAF50"></path>
+                                        <path d="M18.1713 8.36796H17.5V8.33337H10V11.6667H14.7096C14.3809 12.5902 13.7889 13.3972 13.1305 13.9509L13.1309 13.9505L15.6738 16.0901C15.5071 16.2409 18.3334 14.1667 18.3334 10C18.3334 9.44129 18.2759 8.89629 18.1713 8.36796Z" fill="#1976D2"></path>
+                                    </svg>
+                                    Continue with Google
+                                </button>
+                            <input name="__RequestVerificationToken
